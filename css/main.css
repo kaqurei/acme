@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    font-family: "Patrick Hand", Arial, sans-serif;
+    font-size: 2vw;
+    letter-spacing: .2vmin;
+}
+
+.price {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #990033;
+}
+
+.thumbView {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.large-view {
+    display: none;
+}
+
+.small-view {
+    display: block;
+}
+
+#product-wrap {
+    margin: 0 5vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-wrap, .productDisplay {
+    margin: 0 5vw;
+}
+
+.reviewHead-wrapper {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#product-wrap img {
+    width: 50%;
+    margin: 20px auto;
+    align-self: center;
+}
+
+#prod-inner-wrap {
+    margin: 1vw;
+    text-align: left;
+}
+
+#prod-inner-wrap ul li, #prod-inner-wrap p {
+    text-align: left;
+}
+
+body {
+    background-color: #f8f294;
+    background-image: url("http://localhost/acme/images/site/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 0px;
+}
+
+header {
+    background-color: #fff;
+    padding: 0% 5% 0% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button, form input[type=submit], a.button, td a {
+    background-color: #f8f294;
+    font-family: "Patrick Hand", Arial, sans-serif;
+    font-size: 3vmax;
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+}
+
+button:hover, form input[type=submit]:hover, a.button:hover, td a:hover {
+    box-shadow: 2px 2px 2px;
+}
+
+form {
+    width: 80%;
+    background-color: #de2226;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px;
+}
+
+form ul li {
+    font-size: 2vw;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form ul li input[type=submit] {
+    margin-left: 50%;
+    margin-top: 25px;
+ }
+
+ table {
+    width: 80%;
+    margin: 1vmax;
+ }
+
+th, td {
+    font-family: "Permanent Marker", Helvetica, serif;
+    padding: 1vmax;
+ }
+
+ tr:nth-child(even) {
+     background-color: #f2f2f2;
+    }
+
+ thead tr {
+    background-color: #de2226;
+ }
+
+ thead th {
+    font-size: 3vw;
+ }
+
+span.labelTip {
+font-size: 1vw;
+}
+
+.accountObjects {
+    font-size: 4vw;
+}
+
+.accountObjects a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.accountObjects a:hover {
+    color: #de2226;
+}
+
+.accountObjects img {
+    height: 3vmax;
+}
+
+.logo {
+height: 80px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Permanent Marker", Helvetica, serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #de2226;
+    margin: 0px;
+    padding: 3% 1% 0px 1%;
+    height: 5vmax;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 3vw;
+    padding: 2vmin;
+}
+
+nav ul li a:hover {
+    color: #de2226;
+    background-color: #FFF;
+}
+
+nav ul li:hover {
+    background-color: #FFF;
+}
+
+main {
+    background-color: #FFF;
+    padding: 5px 25px 5px 25px;
+    margin-bottom: 0px;
+}
+
+main h1:first-of-type {
+    margin: 0px;
+}
+
+#hero {
+    height: 36vmax;
+    background-image: url("http://localhost/acme/images/site/rocketfeature.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hero img {
+    height: 8vmax;
+    margin-top: 1vmin;
+}
+
+#features {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1vmax;
+}
+
+#hero ul {
+    list-style-type: none;
+    color: #990033;
+    margin: 0px;
+    padding: 0px;
+    font-size: 3vw;
+}
+
+#hero ul h2 {
+    margin: 0px;
+}
+
+.recipesWrap {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    gap: 3px;
+}
+
+figure {
+    background-color: rgba(128,128,128,.5);
+    display: grid;
+    margin: 0em;
+}
+
+figure > img {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure a {
+    color: #0000ee;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption {
+    text-align: center;
+    background-color: #FFF;
+    margin-top: 3px;
+    padding: 3px;
+}
+
+hr {
+    border-top: solid #000 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+footer {
+    background-color: #FFF;
+    margin-top: 0px;
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+}
+
+#prod-display {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#prod-display li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#prod-display li {
+    width: 45%;
+}
+
+#prod-display li figure img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Style adjustments for larger view */
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        margin: 0px 5% 5% 5%;
+        font-size: 2vmin;
+        margin-bottom: 0px;
+    }
+
+    header {
+        padding: 2vmax;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    form ul li input[type=submit] {
+        margin-left: 25%;
+        margin-right: 25%;
+     }
+
+    .accountObjects {
+        font-size: 2vw;
+    }
+
+    .accountObjects img {
+        height: 2vmax;
+    }
+
+    nav ul {
+        padding: 1% 1% 0px 1%;
+    }
+
+    main h1:first-of-type {
+       font-size: 3vmax;
+    }
+
+    #features {
+        background-color: rgba(255, 255, 255, 0);
+        align-items: flex-start;
+    }
+
+    #hero ul {
+        font-size: 2vmax;
+        margin: 2vmax;
+    }
+
+    #hero img {
+        height: 6vmax;
+    }
+
+    .twoColumn {
+        display: grid;
+        grid-template-areas: 
+        "a a a a b b b b"
+        "a a a a b b b b";
+        gap: 5vmax;
+    }
+
+    .recipes {
+        grid-area: a;
+    }
+
+    .reviews {
+        grid-area: b;
+    }
+
+    #product-wrap {
+        margin: 0 5vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2vw;
+    }
+    
+    #product-wrap img {
+        width: 75%;
+    }
+    
+    #prod-inner-wrap {
+        margin: 1vw;
+        text-align: left;
+    }
+
+    .large-view {
+        display: block;
+    }
+    
+    .small-view {
+        display: none;
+    }
+    
+}
